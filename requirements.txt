@@ -1,0 +1,35 @@
+Develop your frontend using EJS, other frameworks instead of HTML.
+The server is expected to run on port 3000
+Submission should include a package.json file listing all dependencies
+Ensure that you grant IP access to your MongoDB from any location
+navigation bar must be implemented on all pages, featuring a well-designed layout for seamless redirection
+Provide comprehensive documentation, including setup instructions, API usage details, and explanations of key design decisions in your Readme.md
+Add your name and group number in your footer
+
+
+Create a registration page where users can sign up by providing a username, password, and any other required information (First Name, Last Name, Age, Country, Gender)
+When a user registers, hash their password using bcrypt before storing it in the database along with other information like username, creation date, etc
+Create a login page where users can input their username and password
+Retrieve the user`s hashed password from the database based on the provided username
+Use bcrypt to compare the hashed password stored in the database with the password entered by the user during login.
+If the passwords match, authenticate the user and redirect them to the main page
+
+Define user roles or permissions such as 'admin' or 'regular user'
+Store the user`s role in the database.
+Implement authorization checks on routes that require specific permissions.
+For example, only allow administrators to access the admin page or perform administrative actions
+It is essential that your admin username is your name. Additionally, include detailed password information in the README file
+
+Implement a functionality within your admin page enabling the addition of new items related to your portfolio. 
+Each item should include three pictures, two names for localization, two descriptions for localization, and timestamps (datetime of creation) for creation, update, and 
+deletion. 
+Admins should be able to edit, delete, and add these items. 
+
+Create visually appealing charts or graphs using data from three different APIs in three different pages 
+The APIs must be different (you can use Stock, News APIs and etc.).
+Ensure interactivity and informative insights in the visualizations to enhance user engagement and understanding of the data
+Do not use APIs focused on mapping, weather, or geolocation
+
+Send a Welcome Message after registration. 
+Implement a notification for some actions on the website
+

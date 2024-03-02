@@ -1,0 +1,64 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+
+        <h1>Welcome to our website!</h1>
+
+        <!-- Карусель -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://avatars.mds.yandex.net/i?id=5ff9b2023e8da0b3aefc76ec4e2ae3e61815c0c8-11044949-images-thumbs&n=13" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://avatars.mds.yandex.net/i?id=f7fd7b2bb82ae1a79c2cca04574acda532a6d946-12496425-images-thumbs&n=13" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://avatars.mds.yandex.net/i?id=19b5bd825a0271a8568618d626b9d8ff57134270-5254610-images-thumbs&n=13" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+        <!-- Блоки для карусели -->
+        <div class="row">
+            <div class="col">
+                <h2>Block 1</h2>
+                <p>cat 1</p>
+            </div>
+            <div class="col">
+                <h2>Block 2</h2>
+                <p>cat 2</p>
+            </div>
+            <div class="col">
+                <h2>Block 3</h2>
+                <p>cat 3</p>
+            </div>
+        </div>
+
+        <%- include('partials/footer') %>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
